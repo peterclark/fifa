@@ -1,7 +1,6 @@
 module.exports = {
-  /*
-  ** Headers of the page
-  */
+
+  /* HEADERS */
   head: {
     title: 'fifa',
     meta: [
@@ -13,13 +12,11 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-  /*
-  ** Customize the progress bar color
-  */
+
+  /* PROGRESS BAR COLOR */
   loading: { color: '#3B8070' },
-  /*
-  ** Build configuration
-  */
+
+  /* BUILD CONFIGURATION*/
   build: {
     /*
     ** Run ESLint on save
@@ -34,5 +31,10 @@ module.exports = {
         })
       }
     }
+  },
+
+  /* 404 */
+  generate: {
+    fallback: true
   }
 }
