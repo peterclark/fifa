@@ -1,12 +1,9 @@
 <template lang='pug'>
   section.container
     div
-      h1.title FIFA
-      h2.subtitle soccer
-      div.links
-        a.button--green(href='/users') Users
-        | &nbsp;
-        a.button--green(href='/about') About
+      h2.subtitle Peter Clark
+      .links
+        a(href="/" class="button--green") back
 </template>
 
 <script>
@@ -17,8 +14,9 @@ export default {
     AppLogo
   },
   head: {
-    title: 'Home'
-  }
+    title: 'About'
+  },
+  transition: 'page'
 }
 </script>
 
@@ -49,8 +47,6 @@ export default {
 }
 
 .links {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  padding-top: 15px;
 }
 </style>

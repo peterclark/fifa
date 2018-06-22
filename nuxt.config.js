@@ -33,6 +33,10 @@ module.exports = {
     }
   },
 
+  css: [
+    'assets/main.css'
+  ],
+
   /* 404 */
   generate: {
     fallback: true
